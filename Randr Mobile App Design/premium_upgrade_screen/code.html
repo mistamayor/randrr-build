@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RANDR - Go Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2b8cee",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "accent": "#00FFFF", /* Electric Blue */
+              "charcoal": "#1A1A1A",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-charcoal font-display">
+<div class="relative flex min-h-screen w-full flex-col text-white group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4">
+<div class="w-12"></div> <!-- Spacer to center title -->
+<h2 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em]">Go Premium</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex h-12 max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent text-white/70 hover:text-white transition-colors p-0">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col px-4 pt-6 pb-4">
+<!-- Headline and Body Text -->
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight text-center">Unlock the Full RANDR Experience</h1>
+<p class="text-white/80 text-base font-normal leading-normal pt-2 text-center">Get the most out of your anonymous chats with these exclusive benefits.</p>
+<!-- Benefits List -->
+<div class="mt-8 space-y-4">
+<!-- Ad-Free Experience -->
+<div class="flex items-center gap-4 min-h-[72px] py-2">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-white/10 text-accent">
+<span class="material-symbols-outlined text-3xl">shield</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal">Ad-Free Experience</p>
+<p class="text-white/60 text-sm font-normal leading-normal">Enjoy uninterrupted conversations without any ads.</p>
+</div>
+</div>
+<!-- Priority Matchmaking -->
+<div class="flex items-center gap-4 min-h-[72px] py-2">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-white/10 text-accent">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal">Priority Matchmaking</p>
+<p class="text-white/60 text-sm font-normal leading-normal">Connect faster and get placed ahead in the matching queue.</p>
+</div>
+</div>
+<!-- Premium Filters -->
+<div class="flex items-center gap-4 min-h-[72px] py-2">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-white/10 text-accent">
+<span class="material-symbols-outlined text-3xl">filter_alt</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-white text-base font-medium leading-normal">Premium Filters</p>
+<p class="text-white/60 text-sm font-normal leading-normal">Access exclusive filters like interests and location proximity.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Footer for CTA and Legal -->
+<div class="sticky bottom-0 mt-auto w-full bg-charcoal/80 backdrop-blur-sm pt-4 pb-6 px-4 border-t border-white/10">
+<!-- Pricing Card -->
+<div class="bg-white/10 rounded-lg p-4 mb-4 text-center">
+<p class="text-base font-medium text-white/80">Monthly Subscription</p>
+<p class="text-3xl font-bold text-white">£2.99<span class="text-base font-medium text-white/60">/month</span></p>
+</div>
+<!-- CTA Button -->
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 bg-accent text-charcoal gap-2 text-lg font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+                Upgrade Now
+            </button>
+<!-- Trust Signal -->
+<div class="flex items-center justify-center gap-2 mt-3">
+<span class="material-symbols-outlined text-base text-white/60">lock</span>
+<p class="text-xs text-white/60">Secure payment via Google Play / Apple Pay</p>
+</div>
+<!-- Legal Text -->
+<p class="text-[11px] text-white/50 text-center mt-4">
+                By tapping "Upgrade Now", you agree to our <a class="underline" href="#">Terms of Service</a>. Your subscription will automatically renew at £2.99/month until you cancel. You can cancel anytime in your device settings.
+            </p>
+</div>
+</div>
+</body></html>

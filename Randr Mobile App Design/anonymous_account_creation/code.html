@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anonymous Identity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2b8cee",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col font-display dark group/design-root overflow-x-hidden">
+<main class="flex flex-1 flex-col justify-between p-4">
+<div class="flex flex-col items-center">
+<h1 class="text-gray-900 dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6 font-display">Create Your Account</h1>
+<div class="h-10"></div>
+<div class="grid grid-cols-1 gap-3 p-4 w-full max-w-xs">
+<div class="flex flex-col gap-3 text-center">
+<div class="px-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Abstract colorful gradient avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyddnLvHPdKjgbUAz7kze0-sjBcvlqzdsmQLJIst-gpXqLimCOP6ihYBmJxo_e6iHVrb2qeNh1d5-QBHB3g-n5CdqCy7TKFAXJtVU3HfYo5H9sutqeaZNAQroOVOsOlqS8kTZalxXslcHfGXrDYTJljRCqccrXgP-xt4EbOalC_bTmca_ABDxPWGzbZ5RieBWkxEQ6RoW30Jt4FOnCT5qRnRJdNaPIbyEg3avrwI-MQfaa451-SnysuU9fp08uqSkqAlKffndoFSE');"></div>
+</div>
+</div>
+</div>
+<div class="h-5"></div>
+<div class="flex items-center gap-4 bg-transparent px-4 min-h-14 justify-center w-full max-w-sm">
+<div class="flex items-center gap-4">
+<p class="text-gray-900 dark:text-white text-base font-normal leading-normal flex-1 truncate font-display">SilentExplorer_8841</p>
+</div>
+<button class="shrink-0 group">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors">
+              autorenew
+            </span>
+</button>
+</div>
+<p class="text-gray-600 dark:text-[#9dabb9] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center font-display">Your anonymous ID. You can change this once.</p>
+</div>
+<div class="w-full">
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] font-display hover:opacity-90 transition-opacity">
+<span class="truncate">Start Anonymously</span>
+</button>
+</div>
+<div class="flex items-center px-4 py-2">
+<div class="flex-grow h-px bg-gray-200 dark:bg-gray-700"></div>
+<span class="flex-shrink px-4 text-gray-500 dark:text-gray-400 text-sm">Or</span>
+<div class="flex-grow h-px bg-gray-200 dark:bg-gray-700"></div>
+</div>
+<div class="flex flex-col gap-3 px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-base font-medium leading-normal tracking-[0.015em] font-display border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<img alt="Brand A logo" class="social-icon dark:invert mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXPpxd2nyg47QqSjYZkwutMmb1cyGDVIemd4WgpFBlxkWMVwLMmUKIRo5ZL1JPCnTM7d1ZpGPEoO_DJpVA-PqIWA4YujjyHZ34qaShUQNl9UdAU5XE4KhAhitltEcOnlpk1ofdMe3ieKJEVztppLtMZuCU5DYxSwcEIp_nWUgwmPlE59c9otSJtNoq4k6AZZ5yIoenIn2o5jK7kozsX_Zw8Sdo5Dur7B8dgf3I_M8jrPltOTw9Jbza1JX5oqbC-xhcRkVIWRFGN8I"/>
+<span class="truncate">Sign in with Brand A</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-base font-medium leading-normal tracking-[0.015em] font-display border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<img alt="Brand B logo" class="social-icon mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwEhvKuhPpX0PyYMl4xxliTIf80LN_V1u7eG2AfPJFqyuM--bxaPZzlVn5XPYWaZxJSRWmna9QEVBjhVxhPf2pMayA5QGq6s0inDDxbVghuE7Uycdq_1PuNcq0VjfDyJdIaSu9EcZdlei1eHP2dyW5rRtNayofpESn7Rm0UDGLh9jkAN2aHxiS2hnJty8AbmGH3CCPDE8qoNDevOzfsRsZs-821fWxDCuzkhFVPjXJVqWZ_itXrmYNYVEh391tKhEmsKpdWBu4U7g"/>
+<span class="truncate">Sign in with Brand B</span>
+</button>
+</div>
+<p class="text-gray-500 dark:text-gray-600 text-xs font-normal leading-normal text-center px-4 pb-2 font-display">
+          By continuing, you agree to our
+          <a class="underline hover:text-primary" href="#">Terms of Service</a> &amp;
+          <a class="underline hover:text-primary" href="#">Privacy Policy</a>.
+        </p>
+</div>
+</main>
+</div>
+
+</body></html>

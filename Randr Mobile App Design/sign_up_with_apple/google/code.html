@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up - RANDR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2b8cee",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col items-center justify-center p-4">
+<div class="flex flex-col w-full max-w-md flex-grow justify-center">
+<!-- HeadlineText -->
+<h1 class="text-gray-900 dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6 font-display">RANDR</h1>
+<!-- TitleText -->
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center pb-3 pt-5 font-display">Jump Right In.</h2>
+<!-- BodyText -->
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 text-center font-display">Start chatting anonymously in seconds. No passwords needed.</p>
+<div class="h-5"></div>
+<!-- SingleButton for Apple -->
+<div class="flex px-4 py-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 gap-2 text-base font-bold leading-normal tracking-[0.015em] font-display">
+<img alt="Apple Logo" class="w-6 h-6 dark:invert-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmNFegGApTUCbcnqzFTZlaz8KE6sTxkCMZDevnQ8ThciodUlvVLaUwEohkE2O0bqhPzCW5XpDaURHSy0iP_rgQDGJHz-bvaze8AWgv5gUlHkkDigv1OaEHRzLqn8KPcDwmgLSYfHXvFaqKSQe2xmh4Hjs6ATYIlAcoJHPt-MUmcxNx6eXy3EI3hRK6peqOMfKeTipI3FnQtcrEgzvxnMtUFak5wWw2khQEKJsPBrXVoK5Qhwb3ZdyzY082Is7_3xrHOw0SH-eMvE4"/>
+<span class="truncate">Sign up with Apple</span>
+</button>
+</div>
+<!-- SingleButton for Google -->
+<div class="flex px-4 pt-2 pb-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-white dark:bg-gray-800 text-gray-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] border border-gray-200 dark:border-gray-700 font-display">
+<img alt="Google Logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDknmFDvFUiR60rM3jycjoErjPtAEForMUj8oa5qYrrPY5gO5_MuodmcCRnR-QJU2uURVvAzzfEoXtbSzpt5NRBSqKRP2V-t2H3s79VQvgY_qKhbHmz9Eph1jNOfrGjfIw4i84v-X2oAO8RDffhUSqno9b7-IwwooPLYpTJOmllo04bpl5xPDB31TScTmkmaRETeFH_6IEqRPV8PoBHiKXgf4_dBYBQwWBcr6FO6d7AUZ3Yf9bd4bhH-TtWs1DNvtyO3BPU8QsJf0Q"/>
+<span class="truncate">Sign up with Google</span>
+</button>
+</div>
+</div>
+<div class="w-full max-w-md text-center pb-8 pt-4">
+<!-- Legal Text -->
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal leading-normal px-4 font-display">
+                By signing up, you agree to our <a class="font-medium text-primary hover:underline" href="#">Terms of Service</a> and <a class="font-medium text-primary hover:underline" href="#">Privacy Policy</a>.
+            </p>
+<div class="h-4"></div>
+<!-- Secondary Link to Login -->
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal px-4 font-display">
+                Already have an account? <a class="font-bold text-primary hover:underline" href="#">Log in</a>
+</p>
+</div>
+</div>
+</body></html>

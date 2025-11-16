@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personalize Your Experience - RANDR</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "foreground-light": "#ffffff",
+                        "foreground-dark": "#18232f",
+                        "text-light": "#101922",
+                        "text-dark": "#f6f7f8",
+                        "text-muted-light": "#64748b",
+                        "text-muted-dark": "#94a3b8",
+                        "border-light": "#e2e8f0",
+                        "border-dark": "#334155"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        /* Custom styles for range slider track and thumb */
+        .range-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            outline: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* Let the thumbs handle pointer events */
+        }
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: #2b8cee; /* primary color */
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid white;
+            pointer-events: auto; /* Enable pointer events on thumbs */
+            margin-top: -8px; /* Center thumb on the track */
+        }
+        .range-slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background-color: #2b8cee; /* primary color */
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid white;
+            pointer-events: auto;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4">
+<div class="text-text-light dark:text-text-dark flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h1 class="text-xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">Personalize Your Experience</h1>
+</div>
+<!-- Body Text -->
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal pb-4 pt-1 px-4 text-center">These optional filters help us find better matches for you.</p>
+<!-- Section Header: Avatar -->
+<h2 class="text-lg font-bold leading-tight tracking-tight px-4 pb-3 pt-4">Choose an Avatar</h2>
+<!-- Image Grid: Avatars -->
+<div class="grid grid-cols-4 gap-4 px-4">
+<div class="relative flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full ring-2 ring-primary p-1" data-alt="Abstract purple and blue geometric shape avatar">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0E9j4nL0LdNH2CxOB3W3fCEMcGSXFLC3vyxahh3bJ294lTeBlin__io1qlehki5KnELEpcMolR_WGtGYl26Y_R2NpO32zda05bdayxnYJzJaDARZHaaAn37vz2EHq7FYOeycrcwGempk5bjM4oCyDg_n-Qgvm5burWp5Pwa08EIg3ChATPtvwxzNyDa_8oetbfIOaxOzVPr93wWpjqcbO72aBX4tpfwejXZC9voHMm_pFWsF_vy77DoNxpFpX_0PSEjZ2rgVMGdo");'></div>
+</div>
+<div class="absolute -bottom-2 flex items-center justify-center size-6 bg-primary rounded-full border-2 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-white" style="font-size: 16px;">check</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Abstract orange and red gradient avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCc8aKw-P3_1MEZlMjPTVlvOSv75eypHWHyrp93uyAaGbOcfO1g3vBnshLtnAxIuc1iJt531hMpNETmU2mDaCxy8kn3TiXWv1xd1g0WVrSho4AwMi29eR5FOyE1BXPLIX4bt-7EXmOOqMy4x-rs6jXTETziu08jg42KVxkMLzhVBVro6hUQsmuCnPtTORNmzRXWTwS3QFnGEWdoCPq-HhjHxFJ7zN6PbIazmfuNRsvu7VtrzAKN8ln3ButPVkHQ3AMyKpTS5Z7W0RQ");'></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Minimalist line art face avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJbkwFZ7s9Qbg4FJSzDHneScZNVoAyVA9pMq7ZoOWbKjHI4ccP0pqR3pHfIaK9bTsp0wQapfua2X2069tsXRXR4imGzE5eAYijS_2rINVxJA_X3iBrvBSXRJd3n4GIWtyUrpknor8ndudUlpy7zo2Bi8NhAEPD7x0Gf1q5xMD38mgMqwALgG5kX5MS4xlnSqw9cYn3gTLy72S8pzcAIm2k4lCAjjdvKW7UVQ2so3Z0XtIO6HfW-amivyNzio0CWra8YSrVuyYdzYg");'></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Cute robot mascot avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBh5WGvx-XJ5fT3a-5-V-jwqKMGswDEhBZAeRDoz1tW55VQUzelkLvktDsSuhbadrgBPM7zDLJi9UvhW2WUe-YEQsZxbISHHIF1vtfYkbI2IdZhymCldjnSB6mFIwhH-jLQALNX5PvOuO4GOcr8Qf-fCyIMJZOGK-gnAkPPReBuMunHIuE1IDxNkgId8hZdKDM2ua7nYcLbfapn2KMFdlFOvvqB9s95su38v73HjFh-XmsaaeFXpjEkOCmoQdiHxGcaq-WA9PBF93g");'></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Pixel art ghost avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5TU-XBR8L5mx6jO_09zMgr2MJQBEy52ZkxtDYLh3pFRUgeld0aQxQbUh-2n6bMzRv7jwY1wdinpzUm3L6xkZ6HNsqORXYHoxBbKZJjy0BYtyJlEnM5z0gflcbDMchz_k94AWkyZtQ0bPvGuN8Y5PL7sxRDiJzN5_eVWCtP0GtXlYmrtX5NWBi1FwnPMbFWU8_gXz0pJOlKbDsYfLjPMgRodu8k0sRyY6Doyhdh0C_75oIs5gJPruFIAOwi4tHWRuMeseWRagaz0o");'></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Origami bird avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDq5nR_lufCnXuVZ-0LTIk0tbmAKroWRVrofm66y2urh5tdVnZts-t1-DxSf-o3qbqhzHQ3M8-GF8anBHwlBFDk8IKIwUUwG8_h95MuD6b-AWlGC_meMW6t-vFP6Dn4GHqQLOuiO5mOO5IIK_aVcd61HQXGt7v6ZwQGHqxgd4ZYpFrunWPY_yXkqHNHEtSvk6TIPVw4ex8ObnmmMr-LUqXKRJwwFg2KUXFQOwq9BP72dk08E-vY1zdkCHNiL-9SWWTAyX4XkER1XYo");'></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Stylized cat silhouette avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDC2-QTpVpBgx4uUC7BgxYoyGxINYdcZrqmk4DoWDwb_PUJthGQgcmG7YqC9FtIfQ0eeTwHAZZy4I8fu_GW6I1orcFyxPCImhm1NMPXHQ85rvw8LY6g4odWpqQNGHstw479WQNx4FVoj3S3-18QaaRnH_8wyaWIswBYSAcgP5xHI74VViecofOfTFcjj78Msfzgs5iM6qmQGUEIIgyXohYyZUuOhhdcyzIfVQPdzf6i07sZOBZDtERXL4Wx31mGnZ97nooYB9dHcJA");'></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Low-poly planet avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDx5uNhwPi2OZVUnaK0kWWnCjYsdpDecCG1dX2hxsX02CKvIDEhSiQznDZw0K-_m9ky4Dh2BIywRjo9h9YreX_kQ7h_SIOkad1LZjlSty_nqfg_RbT7O_3cLjdzZEaKwCOVWs2AvTvFOLmEPwK3zF9XUjiF9rbgOMttSGhV7QM0xrVYatjtaqUBPkYx8bSMJIEb7nfBjwWjehcMjFkxWoGZ1SXFkqmn5tyzKjz82IPwRF2lopdrzXly9CABkyddOEKsTnC6RXjVYsw");'></div>
+</div>
+</div>
+<div class="flex items-center justify-center p-4">
+<button class="text-primary font-semibold text-sm">Show More</button>
+</div>
+<!-- Section Header: Filters -->
+<h2 class="text-lg font-bold leading-tight tracking-tight px-4 pb-3 pt-4">Fine-tune your matches</h2>
+<!-- Filters Section -->
+<div class="flex flex-col gap-6 px-4">
+<!-- Age Range Slider -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<label class="font-semibold text-base text-text-light dark:text-text-dark" for="age-range">Age Range</label>
+<span class="text-sm font-medium text-primary">18 - 45</span>
+</div>
+<div class="relative h-8">
+<div class="absolute w-full h-1 top-1/2 -translate-y-1/2 bg-gray-200 dark:bg-gray-700 rounded-full">
+<div class="absolute h-1 bg-primary rounded-full" style="left: 0%; right: 46%;"></div>
+</div>
+<input class="range-slider" max="99" min="18" type="range" value="18"/>
+<input class="range-slider" max="99" min="18" type="range" value="45"/>
+</div>
+</div>
+<!-- Country Picker -->
+<div class="flex flex-col gap-2">
+<label class="font-semibold text-base text-text-light dark:text-text-dark" for="country">Country</label>
+<div class="relative">
+<select class="w-full appearance-none rounded-lg border border-border-light dark:border-border-dark bg-foreground-light dark:bg-foreground-dark p-3 pr-10 text-text-light dark:text-text-dark placeholder:text-text-muted-light dark:placeholder:text-text-muted-dark focus:outline-none focus:ring-2 focus:ring-primary" id="country">
+<option disabled="" selected="" value="">Select a country</option>
+<option value="USA">United States</option>
+<option value="CAN">Canada</option>
+<option value="GBR">United Kingdom</option>
+<option value="AUS">Australia</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted-light dark:text-text-muted-dark">expand_more</span>
+</div>
+</div>
+<!-- Interests Input -->
+<div class="flex flex-col gap-2">
+<label class="font-semibold text-base text-text-light dark:text-text-dark" for="interests">Interests</label>
+<div class="flex flex-wrap items-center gap-2 rounded-lg border border-border-light dark:border-border-dark bg-foreground-light dark:bg-foreground-dark p-2">
+<span class="flex items-center gap-1 bg-primary/20 text-primary text-sm font-medium px-2 py-1 rounded-md">
+                    Gaming
+                    <span class="material-symbols-outlined cursor-pointer" style="font-size: 16px;">close</span>
+</span>
+<span class="flex items-center gap-1 bg-primary/20 text-primary text-sm font-medium px-2 py-1 rounded-md">
+                    Movies
+                    <span class="material-symbols-outlined cursor-pointer" style="font-size: 16px;">close</span>
+</span>
+<input class="flex-1 bg-transparent border-none p-1 focus:outline-none focus:ring-0 text-text-light dark:text-text-dark placeholder:text-text-muted-light dark:placeholder:text-text-muted-dark" id="interests" placeholder="Add up to 3 interests..." type="text"/>
+</div>
+</div>
+<!-- Privacy Assurance -->
+<div class="flex items-center gap-2 py-2">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark" style="font-size: 20px;">lock</span>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark">Your info is only used for matchmaking and remains anonymous.</p>
+</div>
+</div>
+<!-- Spacer -->
+<div class="flex-grow"></div>
+<!-- Action Section -->
+<div class="sticky bottom-0 bg-background-light dark:bg-background-dark p-4 pt-2 mt-8">
+<div class="flex flex-col gap-4">
+<button class="w-full bg-primary text-white font-bold py-4 px-4 rounded-xl shadow-lg shadow-primary/20 hover:opacity-90">Start Chatting</button>
+<button class="w-full text-text-muted-light dark:text-text-muted-dark font-semibold py-2 px-4 rounded-xl">I'll do this later</button>
+</div>
+</div>
+</div>
+</body></html>
